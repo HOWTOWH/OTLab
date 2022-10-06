@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project add page</title>
+    <link rel="shortcut icon" sizes="16x16" href="./img/ot.svg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/add_style.css">
+</head>
+<body>
+        <!-- header-->
+        <div id="headerWrap">
+            <header>
+                <div class="header">
+                    <h1 class="logo-wrap">
+                        <img src="./img/ot.png" alt="오티연구실로고">
+                    </h1>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">연구실 소개</a></li>
+                            <li><a href="#">프로젝트</a></li>
+                            <li><a href="#">자유 게시판</a></li>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header_right">
+                        <p><a href="#">로그인</a></p>
+                    </div>
+                </div>
+            </header>
+        </div>
+        
+    
+        <!-- main-->
+        <div class="main">
+            <main>
+                <div class="name">
+                    <h2>프로젝트 게시물 작성하기</h2>
+                </div>
+                <section id="add">
+                    <div class="section1"> 
+                        <div class="left-part">
+                            <select name="project" id="projectAdd">
+                                <option value="ing">진행중인 프로젝트</option>
+                                <option value="befor">예정 프로젝트</option>
+                                <option value="end">종료된 프로젝트</option>
+                            </select>
+                            <div class="back-img">
+                                <!-- https://webdir.tistory.com/435 참고하기 -->
+                                <p>배경 사진을 입력하세요.</p>
+                                <input type="file" id="img_file">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./img/back00.jpg" alt="썸네일">
+                        </div>
+                    </div>
+                    
+                    <div class="section2 text">
+                        <input type="text" id="name" placeholder="제목을 입력하세요.">
+                        <input type="text" id="exText" placeholder="설명을 입력하세요.">
+                    </div>
+
+                    <div class="section3 text">
+                        <input type="text" id="mainText" placeholder="내용을 입력하세요.">
+                    </div>
+
+                    <div class="section4 text">
+                        <button type="submit">저장</button>
+                        <button type="button" onclick="location.href='./index_project.html'">취소</button>
+
+                    </div>
+                </section>
+            </main>
+        </div> 
+    
+        <!-- footer-->
+        <div id="footerWrap">
+            <footer>
+                <div class="logo">
+                    <img src="./img/ot.svg" alt="logo">
+                </div>
+                <div class="text-box">
+                    <address>36729 경북 안동시 경동로 1375 (송천동) 국립안동대학교 공대1호관 401호</address>
+                    <p>TEL 054-820-5480  |  Email comkong@anu.ac.kr</p>
+                    <p class="copy">Copyright ⓒ 국립안동대학교 컴퓨터공학과 OTLAB All Rights Reserved.</p>
+                </div>
+                <div class="top-btn">
+                    <a href="#"><img src="./img/top-button-icon.png" alt="top btn"></a>
+                </div>
+            </footer>
+        </div>
+    
+        <!-- quick -->
+        <div class="quick">
+            <div class="quick-top"></div>
+            <div class="quick-bottom"></div>
+        </div>
+</body>
+</html>

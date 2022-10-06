@@ -1,0 +1,205 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* font-family: 'NanumSquare'; */
+
+*{box-sizing: border-box;}
+body{ padding-top: 110px; }
+/* header */
+#headerWrap{
+    width: 100%;
+    top:0;
+    left:0;
+    position: fixed;
+    /*왜인지 모르지만 넣으니까 고정이 되네....와우*/
+    z-index:20;
+    background-color: #fff;
+}
+#headerWrap header{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+#headerWrap header .header{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    color: #000;
+}
+/* 로고 크기 = 205, 100 */
+#headerWrap header .header .logo-wrap img{width: 185; height: 90px;}
+
+#headerWrap header .header nav{
+    display: flex;
+    position: relative;
+    right: 150px; top: 0;
+}
+#headerWrap header .header nav ul{
+    display: flex;
+    justify-content: center;
+}
+#headerWrap header .header nav ul li{margin: 22px 40px;}
+#headerWrap header .header nav ul li a{
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    color: #000;
+}
+#headerWrap header .header nav ul li:nth-child(2) a{
+    font-weight: bold;
+    color: rgb(15, 169, 88);
+}
+#headerWrap header .header nav ul li a:hover{
+    font-weight: bold;
+    color: rgb(108, 226, 0);
+}
+
+#headerWrap header .header .header_right p a{color: #000;}
+
+/* main */
+/* 공통 설정 */
+main section{
+    width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+    font-family: 'NanumSquare';
+}
+main section h2{
+    font-size: 20px;
+    color: #111;
+}
+
+/* main - searchWrap */
+main #searchWrap{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: none;
+}
+main #searchWrap button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+    background: #eee;
+    color: #000;
+    
+    margin: 0;
+    padding: 7px;
+    
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    
+    border: none;
+    border-radius: 4px;
+    
+    display: inline-block;
+    width: auto;
+}
+main #searchWrap button:hover{
+    background: rgb(15, 169, 88);
+    color: #eee;
+}
+main #searchWrap .form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main #searchWrap .form #word{
+    width: 550px;
+    height: 30px;
+    background: #eee;
+    border: none;
+    white-space: nowrap;
+    font-family: 'NanumSquare';
+    font-size: 10pt;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    margin-right: 10px;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* main - project 공통 부분 */
+/* 대표 사진 크기 = 300, 150 */
+main .project{
+    margin: 10px auto 40px;
+    position: relative;
+}
+main .project h2{ margin: 20px 10px; }
+main .project .list-box{ 
+    width: 100%;
+    overflow: hidden;
+}    
+/* 9장 * 300px = 2700px + 9장 * 20px(margin) = 180px*/
+main .project .list-box .list{
+    width: 2880px;
+    display: flex;
+}
+main .project .list-box .list li{
+    width: 300px;
+    margin: 0 10px;
+}
+/* main .project .list-box .list li:last-child{ margin: 0; } */
+main .project .list-box .list li img{ width: 100%; }
+main .project .list-box .list li a p{
+    font-family: 'NanumSquare';
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px;
+}
+
+main .project .list-box .btn{}
+main .project .list-box .btn a{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+main .project .list-box .btn a.prev{ left: -40px; }
+main .project .list-box .btn a.next{ right: -40px; }
+
+/* footer */
+#footerWrap{
+    width: 100%;
+    background-color: #ccc;
+    padding: 10px 0;
+}
+footer{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+footer .logo{
+    width: 200px;
+    margin-right: 100px;
+}
+footer .logo img{width: 100%;}
+footer .text-box{
+    color: rgba(100, 100, 100, .7);
+    font-size: 15px;
+}
+footer .text-box address{ padding: 50px 0 0; }
+footer .text-box p{ padding: 5px 0; }
+footer .text-box .copy{
+    font-size: 13px;
+    margin-top: 10px;
+}
+footer .top-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}

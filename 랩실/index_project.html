@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project page</title>
+    <link rel="shortcut icon" sizes="16x16" href="./img/ot.svg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- header-->
+    <div id="headerWrap">
+        <header>
+            <div class="header">
+                <h1 class="logo-wrap">
+                    <img src="./img/ot.png" alt="오티연구실로고">
+                </h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">연구실 소개</a></li>
+                        <li><a href="#">프로젝트</a></li>
+                        <li><a href="#">자유 게시판</a></li>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <p><a href="#">로그인</a></p>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    <!-- main-->
+    <div class="main">
+        <main>
+            <!-- section# -> div. -->
+            <!-- 검색 파트 -->
+            <section id="searchWrap">
+                <div class="form">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="word" placeholder="검색하세요.">
+                    <button type="submit">검색</button>
+                </div>
+                <div class="project-add">
+                    <button type="button" onclick="location.href='./index_add.html'">프로젝트 추가</button>
+                </div>
+
+            </section>
+
+            <!-- 진행중인 프로젝트 파트 -->
+            <section id="projectIngWrap" class="project">
+                <div class="projectIngWrap">
+                    <h2>진행중인 프로젝트</h2>
+                    <div class="list-box">
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back01.jpg" alt="back01">
+                                    <p>2020 웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back02.jpg" alt="back02">
+                                    <p>2021 웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back03.jpg" alt="back03">
+                                    <p>2022 웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back07.jpg" alt="back07">
+                                    <p>2017 웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back08.jpg" alt="back08">
+                                    <p>2018 웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back09.jpg" alt="back09">
+                                    <p>2019 웹웹</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <a href="#" class="prev"><img src="./img/left-button-icon.png" alt="prev"></a>
+                            <a href="#" class="next"><img src="./img/right-button-icon.png" alt="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 예정 프로젝트 파트 -->
+            <section id="projectBeforWrap" class="project">
+                <div class="projectBeforWrap">
+                    <h2>예정 프로젝트</h2>
+                    <div class="list-box">
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back04.jpg" alt="back04">
+                                    <p>2023 웹웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back05.jpg" alt="back05">
+                                    <p>2024 웹웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back06.jpg" alt="back06">
+                                    <p>2025 웹웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back01.jpg" alt="back01">
+                                    <p>2020 웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back02.jpg" alt="back02">
+                                    <p>2021 웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back03.jpg" alt="back03">
+                                    <p>2022 웹</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <a href="#" class="prev"><img src="./img/left-button-icon.png" alt="prev"></a>
+                            <a href="#" class="next"><img src="./img/right-button-icon.png" alt="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 종료된 프로젝트 파트 -->
+            <section id="projectEndWrap" class="project">
+                <div class="projectEndWrap">
+                    <h2>종료된 프로젝트</h2>
+                    <div class="list-box">
+                        <ul class="list">
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back07.jpg" alt="back07">
+                                    <p>2017 웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back08.jpg" alt="back08">
+                                    <p>2018 웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back09.jpg" alt="back09">
+                                    <p>2019 웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back04.jpg" alt="back04">
+                                    <p>2023 웹웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back05.jpg" alt="back05">
+                                    <p>2024 웹웹웹</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./img/back06.jpg" alt="back06">
+                                    <p>2025 웹웹웹</p>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <a href="#" class="prev"><img src="./img/left-button-icon.png" alt="prev"></a>
+                            <a href="#" class="next"><img src="./img/right-button-icon.png" alt="next"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div> 
+
+    <!-- footer-->
+    <div id="footerWrap">
+        <footer>
+            <div class="logo">
+                <img src="./img/ot.svg" alt="logo">
+            </div>
+            <div class="text-box">
+                <address>36729 경북 안동시 경동로 1375 (송천동) 국립안동대학교 공대1호관 401호</address>
+                <p>TEL 054-820-5480  |  Email comkong@anu.ac.kr</p>
+                <p class="copy">Copyright ⓒ 국립안동대학교 컴퓨터공학과 OTLAB All Rights Reserved.</p>
+            </div>
+            <div class="top-btn">
+                <a href="#"><img src="./img/top-button-icon.png" alt="top btn"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- quick -->
+    <div class="quick">
+        <div class="quick-top"></div>
+        <div class="quick-bottom"></div>
+    </div>
+</body>
+</html>
